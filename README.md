@@ -12,5 +12,5 @@ Instructions have only been tested on Fedora... They will work for MacOS - no id
 3. If the SHA matches the above, insert the SD Card into your laptop and identify the device. E.g. /dev/sda4
 4. Copy the image to the device. E.g.:
    ```
-  $ sudo dd if=./sdcard_backup.img of=<your device> bs=4M status=progress
+   $ sudo dd if=./sdcard_backup.img of=<your device> bs=4M status=progress
    ```
