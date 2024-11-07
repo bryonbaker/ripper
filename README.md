@@ -14,3 +14,10 @@ Instructions have only been tested on Fedora... They will work for MacOS - no id
    ```
    $ sudo dd if=./sdcard_backup.img of=<your device> bs=4M status=progress
    ```
+
+## Mounting the disk image in Fedora
+If you need to work with the disk image offline, you can mount this disk image as follows:
+
+```
+sudo mount -o loop,offset=541065216 ./sdcard_backup.img /mnt/root
+```
